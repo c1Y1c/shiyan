@@ -1,5 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
+//分段函数的计算
+//分数转评分
+//数字逆序及统计位数
 void test01()
 {
     float x;
@@ -11,7 +14,7 @@ void test01()
 void test02()
 {
     float a;
-    scanf("%f");
+    scanf("%f", &a);
     if(a >= 90) printf("A\n");
     if(a >= 80 && a < 89) printf("B\n");
     if(a >= 70 && a < 79) printf("C\n");
@@ -23,20 +26,21 @@ void test03()
     int num, count = 0;
     scanf("%d", &num);
     int a = num;
-    printf("脛忙脨貌脢媒脳脰:");
-    while(a != 0)
+    printf("逆序数字:");
+    while(a)
     {
         printf("%d", a % 10);
         count++;
         a = a / 10;
     }
-    printf("\n脢媒脳脰脦禄脢媒:%d\n", count);
+    printf("\n数字位数:%d\n", count);
 
 }
 int main()
 {
-    //test01();
-    test03();
+    test01();
+    //test02();
+    //test03();
     system("pause");
     return 0;
 }
