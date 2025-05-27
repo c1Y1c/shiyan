@@ -48,7 +48,7 @@ void test02()
 		else
 		{
 			printf("X1=%.2f+%.2fi\n", (-b) / (2.0 * a), sqrt(-PanBie) / (2.0 * a));
-			printf("X2=-%.2f+%.2fi\n", (-b) / (2.0 * a), sqrt(-PanBie) / (2.0 * a));
+			printf("X2=-%.2f-%.2fi\n", (-b) / (2.0 * a), sqrt(-PanBie) / (2.0 * a));
 		}
 	}
 }
