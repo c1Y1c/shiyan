@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+//插入空格
+///
 void test01()
 {
    int num, temp, a[4];
@@ -10,7 +12,9 @@ void test01()
         a[i] = num % 10;
         num = num / 10;
    }
+   printf("插入空格后：");
    for(int i =3; i >=0; i--) printf("%d ", a[i]);
+   printf("\n");
 }
 void test01pro()
 {
@@ -21,7 +25,7 @@ void test01pro()
         str[2 * i] = str[i];
         str[2 * i -1] = ' ';
     }   
-    printf("%s",str);
+    printf("%s\n",str);
 }
 long long fact(int n)
 {
@@ -38,7 +42,7 @@ void test02()
     {
        fval = fval + fact(i);
     }
-    printf("%lld", fval);
+    printf("%lld\n", fval);
 }
 void move(int n, char i, char j, char k)
 {
@@ -50,23 +54,17 @@ void move(int n, char i, char j, char k)
         move(n- 1, j, i, k);
     }
 }
-
 int main()
 {
-    //test01();
-    //test01pro();
+
     int n;
     printf("请输入数量:");
     scanf("%d", &n);
     char A = 'A', B = 'B',C = 'C';
     move(n, A, B, C);
+    //test01();
+    //test01pro();
     //test02();
-    //test03();
-
-
-
-
-
     system("pause");
     return 0;
 }

@@ -1,5 +1,8 @@
 #include<stdio.h> 
 #include<stdlib.h>
+//数据统计及倒序
+//字符串连接
+//梯形的面积
 void test01()
 {
     printf("请输入十个数据:");
@@ -22,7 +25,7 @@ void test01()
     {
         printf("%d ", a[9 - i]);
     } 
-
+    printf("\n");
 }
 void test02()
 {
@@ -35,14 +38,14 @@ void test02()
     while(str1[i] != '\0') i++;
     while(str2[j] != '\0') j++;
     for(int k = 0; k < j + 1; i++, k++) str1[i] = str2[k];
-    printf("连接后的字符串为:%s", str1);
+    printf("连接后的字符串为:%s\n", str1);
 }
 void test03()
 {
     printf("请输入梯形的上底下底和高:");
     float a, b, h;
     scanf("%f%f%f", &a, &b, &h);
-    printf("梯形的面积为:%.2f", (a + b) * h / 2.0);
+    printf("梯形的面积为:%.2f\n", (a + b) * h / 2.0);
 }
 int main()
 {

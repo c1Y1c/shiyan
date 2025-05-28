@@ -1,44 +1,44 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
-//è¯„åˆ†è½¬åˆ†æ•°
-//ä¸€å…ƒäºŒæ¬¡æ–¹ç¨‹æ±‚è§£
-//è¿è¾“è´¹ç”¨è®¡ç®—
+//ÆÀ·Ö×ª·ÖÊı
+//Ò»Ôª¶ş´Î·½³ÌÇó½â
+//ÔËÊä·ÑÓÃ¼ÆËã
 void test01()
 {
 	char grade;
 	scanf("%c", &grade);
-	printf("ä½ çš„åˆ†æ•°:");
+	printf("ÄãµÄ·ÖÊı:");
 	switch (grade)
 	{
 	case 'A': printf("85~100\n"); break;
 	case 'B': printf("70~84\n"); break;
 	case 'C': printf("60~69\n"); break;
 	case 'D': printf("<60\n"); break;
-	default: printf("è¾“å…¥é”™è¯¯ï¼\n");
+	default: printf("ÊäÈë´íÎó£¡\n");
 	}
 }
 void test02()
 {
    	int a, b, c;
-	printf("è¯·åˆ†åˆ«è¾“å…¥ç³»æ•°(æ•´æ•°):");
+	printf("Çë·Ö±ğÊäÈëÏµÊı(ÕûÊı):");
 	scanf("%d%d%d", &a, &b, &c);
 	int PanBie;
 	PanBie = b * b - 4 * a * c;
 	if (PanBie > 0)
 	{
-		printf("æœ‰ä¸¤ä¸ªå®æ•°è§£:\n");
+		printf("ÓĞÁ½¸öÊµÊı½â:\n");
 		printf("X1=%.2f\n", (-b + sqrt(PanBie)) / (2.0 * a));
 		printf("X2=%.2f\n", (-b - sqrt(PanBie)) / (2.0 * a));
 	}
 	else if (PanBie == 0)
 	{
-		printf("æœ‰ä¸¤ç›¸ç­‰å®æ•°è§£:\n");
+		printf("ÓĞÁ½ÏàµÈÊµÊı½â:\n");
 		printf("X1=X2=%.2f\n", (-b) / (2.0 * a));
 	}
 	else
 	{
-		printf("æœ‰ä¸¤ä¸ªå¤æ•°è§£:\n");
+		printf("ÓĞÁ½¸ö¸´Êı½â:\n");
 		float s = (-b) / (2.0 * a);
 		if(s == 0)
 		{
@@ -48,7 +48,7 @@ void test02()
 		else
 		{
 			printf("X1=%.2f+%.2fi\n", (-b) / (2.0 * a), sqrt(-PanBie) / (2.0 * a));
-			printf("X2=-%.2f-%.2fi\n", (-b) / (2.0 * a), sqrt(-PanBie) / (2.0 * a));
+			printf("X2=%.2f-%.2fi\n", (-b) / (2.0 * a), sqrt(-PanBie) / (2.0 * a));
 		}
 	}
 }
@@ -56,7 +56,7 @@ void test03()
 {
 	int c, s;
 	float p ,w ,d, f;
-	printf("è¯·è¾“å…¥å•ä»·ã€é‡é‡ã€è·ç¦»:");
+	printf("ÇëÊäÈëµ¥¼Û¡¢ÖØÁ¿¡¢¾àÀë:");
 	scanf("%f%f%d", &p, &w, &s);
 	if(s > 3000) c = 12;
 	else c = s / 250;
@@ -77,13 +77,13 @@ void test03()
 		case 12: d = 15;break;
 	}
 	f = p * w * s * (1 - d / 100);
-	printf("æ€»è¿è´¹=%.2f\n", f);
+	printf("×ÜÔË·Ñ=%.2f\n", f);
 }
 int main()
 { 
 	//test01();
-	//test02();
-	test03();
+	test02();
+	//test03();
 	system("pause");
 	return 0;
 }

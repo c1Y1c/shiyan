@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+//数组逆序存放
+//选择排序法
+//杨辉三角
 void test01()
 {
     int arr[5];
@@ -67,8 +69,8 @@ void test03()
 int main()
 {
     //test01();
-    test02();
-    //test03();
+    //test02();
+    test03();
     system("pause");
     return 0;
 }

@@ -1,5 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
+//指针遍历数组
+//指针逆序数组
+//指针选择排序
 void test01()
 {
     int arr[5] = {9,9,9,6,6};
@@ -20,7 +23,6 @@ void test01()
     for(int i = 0; i < 5; i++) printf("%d", *(arr+i));
     printf("\n第5种方式遍历\n");
     for(int i = 0; i< 5; i++) printf("%d", *(p+i));
-
 }
 void inv(int *p, int n)
 {
@@ -66,7 +68,7 @@ void test03()
 {
     int a[10];
     printf("请输入10个整数:");
-    for(int i = 0; i < 10; i++) scanf("%d", a[i]);
+    for(int i = 0; i < 10; i++) scanf("%d", &a[i]);
     PickSort(a, 10);
     for(int i = 0; i < 10; i++) printf("%d", a[i]);
 }
