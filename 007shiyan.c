@@ -2,7 +2,8 @@
 #include<stdlib.h>
 #include<string.h>
 //²åÈë¿Õ¸ñ
-///
+//½×³ËºÍ
+//ººÅµËþ
 void test01()
 {
    int num, temp, a[4];
